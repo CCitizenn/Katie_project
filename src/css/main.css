@@ -454,14 +454,14 @@ footer {
 
 .snake-button-wrapper {
     position: relative;
-    height: 60px; /* reserves space */
+    height: 60px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #snake-start-btn {
-    position: absolute; /* <-- stops layout shifting */
+    position: absolute; 
     top: 0;
     left: 50%;
     transform: translateX(-50%);
