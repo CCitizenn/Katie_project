@@ -156,7 +156,7 @@ function initScratchCard() {
 
         const percent = (transparentPixels / totalPixels) * 100;
 
-        if (percent >= 60) {
+        if (percent >= 30) {
             canvas.style.transition = "opacity 2s ease";
             canvas.style.opacity = 0;
         }
