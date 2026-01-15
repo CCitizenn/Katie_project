@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Liam + Katie</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+
+<body>
+    <h1>Katie Maskell</h1>
+    <h4>thank you for being in my life</h4>
+    <div class="time-box">
+    <h2 class="time-title">Time Together</h2>
+
+    <div class="time-grid">
+        <div class="time-item">
+            <span class="time-number" id="years">00</span>
+            <span class="time-label">Years</span>
+        </div>
+
+        <div class="time-item">
+            <span class="time-number" id="months">00</span>
+            <span class="time-label">Months</span>
+        </div>
+
+        <div class="time-item">
+            <span class="time-number" id="days">00</span>
+            <span class="time-label">Days</span>
+        </div>
+
+        <div class="time-item">
+            <span class="time-number" id="hours">00</span>
+            <span class="time-label">Hours</span>
+        </div>
+
+        <div class="time-item">
+            <span class="time-number" id="minutes">00</span>
+            <span class="time-label">Minutes</span>
+        </div>
+
+        <div class="time-item">
+            <span class="time-number" id="seconds">00</span>
+            <span class="time-label">Seconds</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="scratch-box">
+        <h4>scratch me! :) </h4>
+        <div class="scratch-container">
+            <img src="src/images/lanapic.JPG" class="scratch-photo" alt="Hidden Photo">
+
+            <canvas class="scratch-canvas"></canvas>
+        </div>
+    </div>
+
+    <div class="letter-box">
+        <h2 class="letter-title">A Letter for You</h2>
+
+        <div class="letter-card" onclick="openLetter()">
+            <div class="letter-icon">💌</div>
+            <div class="letter-text">Click to open</div>
+        </div>
+    </div>
+
+    <div id="letter-modal" class="letter-modal">
+        <div class="letter-content">
+            <span class="close-button" onclick="closeLetter()">×</span>
+            <h2>My Dearest Bebe</h2>
+            <p>
+                The hour is late, and the gaslights in the street below have long since flickered into a dull, amber haze...
+                <br>
+                Is how I would love to be able to start this letter, however, I am not a 19th century novelist.
+                This website was made for you, to show you how much you mean to me, and how grateful I am to be apart of your life.
+                I tried personalise and tailor this as much as possible, to make it a special experience just for you, but, in all honesty,
+                some of these ideas are inspired from things I've seen online. I took my own twist on it, and made it all myself though. 
+                <br><br>
+                I made this only partially because I messed up the christmas presents, but more wholly because I wanted to, as projects in the name of you feel meaningful to me.
+                This is the type of thing I hope you can brag about to your friends, and the type of thing you can look at whenever you feel sad, or lonely, or like the whole world is against you.
+                This is a declaration that you are loved, and cherished, and adored. This is reassurance that no matter how you feel, there is a man here willing to feel it with you.
+                I hope this counter never stops counting up, and the gallery keeps growing.
+                <br><br>
+                Yours always,<br>
+                Liam Golzar
+            </p>
+        </div>
+    </div>
+
+    <div class="compatibility-box">
+        <h2 class="compatibility-title">Compatibility Calculator</h2>
+
+        <!-- User types Katie here -->
+        <input type="text" id="name1" placeholder="Enter their name">
+        <p>+</p>
+        <!-- Liam is fixed -->
+        <input type="text" id="name2" value="Liam" readonly>
+        <br>
+        <button onclick="startCompatibility()">Calculate Compatibility</button>
+
+        <div id="loading-section" class="loading-section">
+            <div id="loading-bar" class="loading-bar"></div>
+            <div id="loading-message" class="loading-message"></div>
+        </div>
+
+        <div id="result" class="compatibility-result"></div>
+    </div>
+
+    <div class="snake-box">
+        <h2 class="snake-title">minigame break</h2>
+        <p class="othertitle">This is how i imagine it when we order a dominos</p>
+
+        <div class="snake-button-wrapper">
+            <button id="snake-start-btn">Start Game</button>
+        </div>
+
+        <div class="snake-container">
+            <canvas id="snake-canvas" width="600" height="600"></canvas>
+        </div>
+    </div>
+    <div id="secret-animation">✨ IM JUST A BEBE ✨</div>
+
+
+    <div class="gallery">
+        <div class="polaroid">
+        <img src="src/images/theAnchorage.jpg" alt="">
+        <div class="caption">First trip together</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/newyears.png" alt="">
+        <div class="caption">New Years 2026</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/GreekFood.png" alt="">
+        <div class="caption">A personal favorite</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/pokerGod.jpg" alt="">
+        <div class="caption">One of few good memories from lupton</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/IMG_9051.jpg" alt="">
+        <div class="caption">I had a feeling by this point</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/milkspoons.jpg" alt="">
+        <div class="caption">DAMN SHE NEED SUM MILK</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/IMG_2349.jpg" alt="">
+        <div class="caption">Victoria secrets runway model when??</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/IKEA.jpg" alt="">
+        <div class="caption">The bith of the djungelskog 🐻</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/IMG_1788.jpg" alt="">
+        <div class="caption"><br>I'm pretty sure jess newham has a photo like this so it ruins it for me :(</div>
+        </div>        
+        <div class="polaroid">
+        <img src="src/images/creampie.jpg" alt="">
+        <div class="caption">Terrified of your parents ever since</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/blood.png" alt="">
+        <div class="caption">I was so proud of you for this even tho you didnt manage</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/cats.png" alt="">
+        <div class="caption">I liked thinking the woman though we dated.</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/party.png" alt="">
+        <div class="caption">this one makes me giggle sm</div>
+        </div>
+        <div class="polaroid">
+        <img src="src/images/prom.png" alt="">
+        <div class="caption">our one prom photo</div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p> &#169; Liam Golzar</p>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
